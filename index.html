@@ -36,6 +36,7 @@
                     <div class="modal-body">
                         <p>Task Title</p>
                         <input class="form-control" type="text" name="" id="textInput">
+                        <div id="msg"></div>
                         <br>
 
                         <p>Due Date</p>
@@ -48,7 +49,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Add</button>
+                        <button type="submit" id="add" class="btn btn-primary">Add</button>
                     </div>
                 </div>
             </div>
@@ -61,8 +62,8 @@
                 <p>going to gym</p>
 
                 <span class="options">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <i class="fa-solid fa-trash"></i>
+                    <i onClick = "editTask(this)" data-toggle="modal" data-target="#form" class="fa-solid fa-pen-to-square"></i>
+                    <i onClick = "deleteTask(this)" class="fa-solid fa-trash"></i>
                 </span>
             </div>
             <div>
@@ -71,12 +72,12 @@
                 <p>going to gym</p>
 
                 <span class="options">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                    <i class="fa-solid fa-trash"></i>
+                    <i onClick = "editTask(this)" data-toggle="modal" data-target="#form" class="fa-solid fa-pen-to-square"></i>
+                    <i onClick = "deleteTask(this)" class="fa-solid fa-trash"></i>
                 </span>
             </div>
         </div>
-    </div>
+    </div> 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
