@@ -25,11 +25,12 @@ The app allows users to add, edit, and delete tasks, with all data stored in the
 ---
 
 ## 📂 Project Structure
-├── index.html # Main HTML file
+```
+├── index.html # Main HTML file 
 ├── style.css # Custom CSS
 ├── main.js # App logic
 └── README.md # Documentation
-
+```
 ---
 
 ## 📖 How to Use
@@ -38,6 +39,7 @@ The app allows users to add, edit, and delete tasks, with all data stored in the
 ```bash
 git clone https://github.com/yourusername/todo-app.git
 cd todo-app
+```
 ### 2️⃣ Open in Browser
 Simply open index.html in your favorite browser.
 
